@@ -1,0 +1,10 @@
+{
+  "run_name": "shakespeare-full-ft",
+  "steps": 400,
+  "tokens": 1638400,
+  "best_val_loss": 3.917756128311157,
+  "final_val_loss": 3.9753386974334717,
+  "minutes": 1.8932202816009522,
+  "n_params": 26747392,
+  "n_trainable": 26747392
+}

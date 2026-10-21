@@ -1,0 +1,10 @@
+{
+  "run_name": "shakespeare-lora-r16",
+  "steps": 400,
+  "tokens": 1638400,
+  "best_val_loss": 4.060338854789734,
+  "final_val_loss": 4.066079199314117,
+  "minutes": 2.3297731320063275,
+  "n_params": 27714048,
+  "n_trainable": 966656
+}

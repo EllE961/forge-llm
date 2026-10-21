@@ -1,0 +1,10 @@
+{
+  "run_name": "tinystories-30m",
+  "steps": 2537,
+  "tokens": 83132416,
+  "best_val_loss": 1.4218835562467576,
+  "final_val_loss": 1.4218835562467576,
+  "minutes": 75.14466479619344,
+  "n_params": 26747392,
+  "n_trainable": 26747392
+}

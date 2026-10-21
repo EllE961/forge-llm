@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "device": "cuda",
+    "torch": "1.13.1+cu117",
+    "python": "3.10.6",
+    "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "target_params": 26747392,
+    "draft_params": 6293376,
+    "prompts": 8,
+    "tokens_per_prompt": 128
+  },
+  "rows": [
+    {
+      "engine": "eager",
+      "temperature": 0.0,
+      "k": 1,
+      "acceptance_rate": 0.7828371278458844,
+      "tokens_per_round": 1.7746967071057191,
+      "tok_per_s": 87.57497613207772,
+      "baseline_tok_per_s": 87.76775336094778,
+      "speedup": 0.9978035528826031,
+      "identical_to_greedy": true
+    },
+    {
+      "engine": "eager",
+      "temperature": 0.0,
+      "k": 2,
+      "acceptance_rate": 0.6899766899766899,
+      "tokens_per_round": 2.3703703703703702,
+      "tok_per_s": 91.98502498166084,
+      "baseline_tok_per_s": 87.76775336094778,
+      "speedup": 1.048050354022045,
+      "identical_to_greedy": true
+    },
+    {
+      "engine": "eager",
+      "temperature": 0.0,
+      "k": 3,
+      "acceptance_rate": 0.6384395813510942,
+      "tokens_per_round": 2.9008498583569406,
+      "tok_per_s": 108.08878404364778,
+      "baseline_tok_per_s": 87.76775336094778,
+      "speedup": 1.231531854291964,
+      "identical_to_greedy": true
+    },
+    {
+      "engine": "eager",
+      "temperature": 0.0,
+      "k": 4,
+      "acceptance_rate": 0.5788617886178862,
+      "tokens_per_round": 3.282051282051282,
+      "tok_per_s": 111.37442534231506,
+      "baseline_tok_per_s": 87.76775336094778,
+      "speedup": 1.268967486091208,
+      "identical_to_greedy": true
+    },
+    {
+      "engine": "eager",
+      "temperature": 0.0,
+      "k": 6,
+      "acceptance_rate": 0.47088290544771444,
+      "tokens_per_round": 3.764705882352941,
+      "tok_per_s": 107.3684300813111,
+      "baseline_tok_per_s": 87.76775336094778,
+      "speedup": 1.2233243528492166,
+      "identical_to_greedy": true
+    },
+    {
+      "engine": "eager",
+      "temperature": 0.0,
+      "k": 8,
+      "acceptance_rate": 0.39835306227483275,
+      "tokens_per_round": 4.096,
+      "tok_per_s": 101.39618788039775,
+      "baseline_tok_per_s": 87.76775336094778,
+      "speedup": 1.1552783795593193,
+      "identical_to_greedy": true
+    },
+    {
+      "engine": "eager",
+      "temperature": 0.8,
+      "k": 1,
+      "acceptance_rate": 0.7629757785467128,
+      "tokens_per_round": 1.7564322469982847,
+      "tok_per_s": 79.33510303809521,
+      "baseline_tok_per_s": 81.1373137717487,
+      "speedup": 0.9777881390216668
+    },
+    {
+      "engine": "eager",
+      "temperature": 0.8,
+      "k": 2,
+      "acceptance_rate": 0.6868451688009313,
+      "tokens_per_round": 2.359447004608295,
+      "tok_per_s": 88.63079401692855,
+      "baseline_tok_per_s": 81.1373137717487,
+      "speedup": 1.092355537752459
+    },
+    {
+      "engine": "eager",
+      "temperature": 0.8,
+      "k": 3,
+      "acceptance_rate": 0.6009174311926605,
+      "tokens_per_round": 2.7750677506775068,
+      "tok_per_s": 88.31557743222382,
+      "baseline_tok_per_s": 81.1373137717487,
+      "speedup": 1.0884705609144105
+    },
+    {
+      "engine": "eager",
+      "temperature": 0.8,
+      "k": 4,
+      "acceptance_rate": 0.5370370370370371,
+      "tokens_per_round": 3.1219512195121952,
+      "tok_per_s": 86.72389387869255,
+      "baseline_tok_per_s": 81.1373137717487,
+      "speedup": 1.0688534023034055
+    },
+    {
+      "engine": "eager",
+      "temperature": 0.8,
+      "k": 6,
+      "acceptance_rate": 0.46101485148514854,
+      "tokens_per_round": 3.6702508960573477,
+      "tok_per_s": 80.79681184559858,
+      "baseline_tok_per_s": 81.1373137717487,
+      "speedup": 0.9958033867486913
+    },
+    {
+      "engine": "eager",
+      "temperature": 0.8,
+      "k": 8,
+      "acceptance_rate": 0.3336359509759419,
+      "tokens_per_round": 3.5432525951557095,
+      "tok_per_s": 64.58464360516628,
+      "baseline_tok_per_s": 81.1373137717487,
+      "speedup": 0.7959918883542592
+    },
+    {
+      "engine": "graph",
+      "temperature": 0.0,
+      "k": 1,
+      "acceptance_rate": 0.784965034965035,
+      "tokens_per_round": 1.7902097902097902,
+      "tok_per_s": 329.8009100947939,
+      "baseline_tok_per_s": 591.9064537677107,
+      "speedup": 0.557184176647315,
+      "identical_to_greedy": true
+    },
+    {
+      "engine": "graph",
+      "temperature": 0.0,
+      "k": 2,
+      "acceptance_rate": 0.6888111888111889,
+      "tokens_per_round": 2.386946386946387,
+      "tok_per_s": 406.047297279877,
+      "baseline_tok_per_s": 591.9064537677107,
+      "speedup": 0.6859991045801762,
+      "identical_to_greedy": true
+    },
+    {
+      "engine": "graph",
+      "temperature": 0.0,
+      "k": 3,
+      "acceptance_rate": 0.6409523809523809,
+      "tokens_per_round": 2.9257142857142857,
+      "tok_per_s": 481.89988268036393,
+      "baseline_tok_per_s": 591.9064537677107,
+      "speedup": 0.8141487216652008,
+      "identical_to_greedy": true
+    },
+    {
+      "engine": "graph",
+      "temperature": 0.0,
+      "k": 4,
+      "acceptance_rate": 0.5790322580645161,
+      "tokens_per_round": 3.303225806451613,
+      "tok_per_s": 460.8466238431339,
+      "baseline_tok_per_s": 591.9064537677107,
+      "speedup": 0.7785801639932612,
+      "identical_to_greedy": true
+    },
+    {
+      "engine": "graph",
+      "temperature": 0.0,
+      "k": 6,
+      "acceptance_rate": 0.46801968019680196,
+      "tokens_per_round": 3.7785977859778597,
+      "tok_per_s": 451.42071667838,
+      "baseline_tok_per_s": 591.9064537677107,
+      "speedup": 0.7626555071412293,
+      "identical_to_greedy": true
+    },
+    {
+      "engine": "graph",
+      "temperature": 0.0,
+      "k": 8,
+      "acceptance_rate": 0.3950803212851406,
+      "tokens_per_round": 4.112449799196787,
+      "tok_per_s": 435.33690908782285,
+      "baseline_tok_per_s": 591.9064537677107,
+      "speedup": 0.7354826194523427,
+      "identical_to_greedy": true
+    },
+    {
+      "engine": "graph",
+      "temperature": 0.8,
+      "k": 1,
+      "acceptance_rate": 0.7770034843205574,
+      "tokens_per_round": 1.78397212543554,
+      "tok_per_s": 283.8690969903394,
+      "baseline_tok_per_s": 427.97393087699515,
+      "speedup": 0.6632859539099516
+    },
+    {
+      "engine": "graph",
+      "temperature": 0.8,
+      "k": 2,
+      "acceptance_rate": 0.7120853080568721,
+      "tokens_per_round": 2.4265402843601898,
+      "tok_per_s": 331.52111503291746,
+      "baseline_tok_per_s": 427.97393087699515,
+      "speedup": 0.7746292264895
+    },
+    {
+      "engine": "graph",
+      "temperature": 0.8,
+      "k": 3,
+      "acceptance_rate": 0.5876010781671159,
+      "tokens_per_round": 2.7601078167115904,
+      "tok_per_s": 324.22265559527995,
+      "baseline_tok_per_s": 427.97393087699515,
+      "speedup": 0.7575757124526012
+    },
+    {
+      "engine": "graph",
+      "temperature": 0.8,
+      "k": 4,
+      "acceptance_rate": 0.5081120943952803,
+      "tokens_per_round": 3.0206489675516224,
+      "tok_per_s": 314.9421569057696,
+      "baseline_tok_per_s": 427.97393087699515,
+      "speedup": 0.7358909835007865
+    },
+    {
+      "engine": "graph",
+      "temperature": 0.8,
+      "k": 6,
+      "acceptance_rate": 0.4261168384879725,
+      "tokens_per_round": 3.5189003436426116,
+      "tok_per_s": 291.9561102201609,
+      "baseline_tok_per_s": 427.97393087699515,
+      "speedup": 0.6821819955759703
+    },
+    {
+      "engine": "graph",
+      "temperature": 0.8,
+      "k": 8,
+      "acceptance_rate": 0.4051020408163265,
+      "tokens_per_round": 4.179591836734694,
+      "tok_per_s": 265.64737628860564,
+      "baseline_tok_per_s": 427.97393087699515,
+      "speedup": 0.6207092468091377
+    }
+  ]
+}

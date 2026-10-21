@@ -1,0 +1,67 @@
+{
+  "model": {
+    "vocab_size": 8192,
+    "d_model": 512,
+    "n_layers": 8,
+    "n_heads": 8,
+    "n_kv_heads": 2,
+    "ffn_dim": 1408,
+    "multiple_of": 64,
+    "max_seq_len": 512,
+    "rope_theta": 10000.0,
+    "norm_eps": 1e-05,
+    "dropout": 0.0,
+    "tie_embeddings": true,
+    "extra": {}
+  },
+  "train": {
+    "run_name": "shakespeare-lora-r16",
+    "ckpt_dir": "checkpoints",
+    "runs_dir": "runs",
+    "train_bin": "data/shakespeare/all.bin",
+    "val_bin": null,
+    "val_frac": 0.9,
+    "tokenizer": "data/tokenizer.json",
+    "init_from": "checkpoints/tinystories-30m/model.safetensors",
+    "lora": {
+      "r": 16,
+      "alpha": 32,
+      "dropout": 0.05,
+      "targets": [
+        "wqkv",
+        "wo",
+        "w13",
+        "w2"
+      ]
+    },
+    "batch_size": 16,
+    "grad_accum": 1,
+    "seq_len": 256,
+    "max_steps": 400,
+    "warmup_steps": 30,
+    "lr": 0.002,
+    "min_lr_ratio": 0.1,
+    "weight_decay": 0.0,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "grad_clip": 1.0,
+    "eval_interval": 25,
+    "eval_batches": 20,
+    "log_interval": 10,
+    "ckpt_interval": 100,
+    "sample_prompts": [
+      "ROMEO:",
+      "First Citizen:\nWe"
+    ],
+    "sample_tokens": 80,
+    "dtype": "bf16",
+    "seed": 1337,
+    "peak_tflops": 59.5,
+    "max_minutes": null,
+    "budget_minutes": null,
+    "save_last": true,
+    "device": "cuda"
+  },
+  "n_params": 27714048,
+  "n_trainable": 966656
+}

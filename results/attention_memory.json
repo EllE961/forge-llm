@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "device": "cuda",
+    "torch": "1.13.1+cu117",
+    "python": "3.10.6",
+    "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "seq_len": 512,
+    "model": "27M"
+  },
+  "rows": [
+    {
+      "batch_size": 8,
+      "attention": "chunked",
+      "tok_per_s": 22430.759987701305,
+      "peak_mem_gb": 1.8826112
+    },
+    {
+      "batch_size": 8,
+      "attention": "naive",
+      "tok_per_s": 26616.461603054595,
+      "peak_mem_gb": 2.677431808
+    },
+    {
+      "batch_size": 16,
+      "attention": "chunked",
+      "tok_per_s": 25056.322286447532,
+      "peak_mem_gb": 3.344375296
+    },
+    {
+      "batch_size": 16,
+      "attention": "naive",
+      "tok_per_s": 29113.629789382147,
+      "peak_mem_gb": 4.946861568
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "device": "cuda",
+    "torch": "1.13.1+cu117",
+    "python": "3.10.6",
+    "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+    "gpu": "NVIDIA GeForce RTX 3080",
+    "ckpt": "checkpoints/tinystories-30m/model.safetensors",
+    "step": 2537,
+    "tokens_seen": 83132416
+  },
+  "val_loss": 1.4229493568686662,
+  "val_ppl": 4.149340296338513,
+  "val_tokens": 5310976,
+  "bits_per_byte": 0.49388089308677513,
+  "params": 26747392,
+  "samples": [
+    {
+      "prompt": "Once upon a time, there was a little girl named Lily.",
+      "completion": " She had a big, blue bag with her. One day, she went with her mom to the park. Lily was very happy.\nAt the park, Lily saw a little boy named Tom. Tom was sad. Lily asked, \"Why are you sad, Tom?\" Tom said, \"I lost my toy.\" Lily wanted to help Tom feel better.\nLily had an idea. She took her big, blue bag and put it in the bag. Tom saw the bag and opened it. They both looked at the bag. It was empty! Lily and Tom were happy. They became good friends and played at the park all day."
+    },
+    {
+      "prompt": "Tom and his dog Max went to the park. Suddenly,",
+      "completion": " Tom saw a big tree. He wanted to climb it. Tom said, \"Max, come up!\" Max did not want to go up the tree. But Tom didn't listen.\nTom climbed the tree and it got wet. He was cold and wet. But then, he got his big coat. He was happy! Max was okay, but he was not. Tom felt bad. He said, \"I'm sorry, Max.\" Max wagged his tail and they both went home."
+    },
+    {
+      "prompt": "The little robot was sad because",
+      "completion": " he did not have any friends. He tried to find a friend to play with, but he could not find anyone.\nThen, a kind bird saw the little robot and said, \"Why are you sad, little robot?\" The little robot said, \"I want a friend to play with me, but I cannot find anyone to play with.\" The bird thought for a moment and said, \"I know where you can find a friend who can play with me. Let's play together!\"\nThe little robot and the bird played all day long. They had so much fun that they forgot all about the station. The little robot was happy that he could make his friend the little robot happy. They both became best friends and played together every day."
+    },
+    {
+      "prompt": "Sara found a strange key under her bed.",
+      "completion": " She thought it was very pretty. She showed the key to her mom. Her mom told her to share it with the dog. The dog was happy and wagged its tail. Sara and her mom played with the dog and had lots of fun."
+    }
+  ]
+}

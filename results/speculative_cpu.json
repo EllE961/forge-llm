@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "device": "cpu",
+    "torch": "1.13.1+cu117",
+    "python": "3.10.6",
+    "cpu": "AMD64 Family 25 Model 33 Stepping 0, AuthenticAMD",
+    "threads": 8,
+    "target_params": 26747392,
+    "draft_params": 6293376,
+    "prompts": 6,
+    "tokens_per_prompt": 128
+  },
+  "rows": [
+    {
+      "engine": "eager",
+      "temperature": 0.0,
+      "k": 2,
+      "acceptance_rate": 0.696875,
+      "tokens_per_round": 2.3850931677018634,
+      "tok_per_s": 127.65369043161772,
+      "baseline_tok_per_s": 78.20734667633002,
+      "speedup": 1.6322467882707619,
+      "identical_to_greedy": true
+    },
+    {
+      "engine": "eager",
+      "temperature": 0.0,
+      "k": 4,
+      "acceptance_rate": 0.5815217391304348,
+      "tokens_per_round": 3.296137339055794,
+      "tok_per_s": 130.28718280684132,
+      "baseline_tok_per_s": 78.20734667633002,
+      "speedup": 1.66591999784943,
+      "identical_to_greedy": true
+    },
+    {
+      "engine": "eager",
+      "temperature": 0.0,
+      "k": 6,
+      "acceptance_rate": 0.4772344013490725,
+      "tokens_per_round": 3.801980198019802,
+      "tok_per_s": 113.66621480827361,
+      "baseline_tok_per_s": 78.20734667633002,
+      "speedup": 1.45339561612663,
+      "identical_to_greedy": true
+    },
+    {
+      "engine": "eager",
+      "temperature": 0.8,
+      "k": 2,
+      "acceptance_rate": 0.6826625386996904,
+      "tokens_per_round": 2.3486238532110093,
+      "tok_per_s": 130.07821189098465,
+      "baseline_tok_per_s": 88.75292228834668,
+      "speedup": 1.4656217343286735
+    },
+    {
+      "engine": "eager",
+      "temperature": 0.8,
+      "k": 4,
+      "acceptance_rate": 0.4912451361867704,
+      "tokens_per_round": 2.920152091254753,
+      "tok_per_s": 113.24656415012807,
+      "baseline_tok_per_s": 88.75292228834668,
+      "speedup": 1.2759756099320847
+    },
+    {
+      "engine": "eager",
+      "temperature": 0.8,
+      "k": 6,
+      "acceptance_rate": 0.40615615615615613,
+      "tokens_per_round": 3.383259911894273,
+      "tok_per_s": 101.62158139691869,
+      "baseline_tok_per_s": 88.75292228834668,
+      "speedup": 1.1449942016192256
+    }
+  ]
+}

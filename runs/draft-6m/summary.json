@@ -1,0 +1,10 @@
+{
+  "run_name": "draft-6m",
+  "steps": 4043,
+  "tokens": 66240512,
+  "best_val_loss": 1.6599965870380402,
+  "final_val_loss": 1.6599965870380402,
+  "minutes": 25.089481377601622,
+  "n_params": 6293376,
+  "n_trainable": 6293376
+}
