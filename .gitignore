@@ -1,0 +1,22 @@
+# data, weights and run artefacts are reproducible and large
+data/
+checkpoints/
+runs/*/*.pt
+runs/*.log
+*.pt
+*.bin
+
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.venv/
+venv/
+
+# editors / os
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
