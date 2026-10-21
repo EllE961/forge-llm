@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forge — LM workbench</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='3' y='4' width='18' height='4' rx='1.5' fill='%23fff0c2'/%3E%3Crect x='3' y='10' width='18' height='4' rx='1.5' fill='%23f07a1e'/%3E%3Crect x='3' y='16' width='18' height='4' rx='1.5' fill='%237a1f0a'/%3E%3C/svg%3E">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail">
+    <div class="wordmark">
+      <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+        <defs>
+          <linearGradient id="wm" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#ffffff" stop-opacity=".0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".35"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <rect x="3" y="4" width="18" height="4" rx="1.5" fill="#fff0c2"/>
+        <rect x="3" y="10" width="18" height="4" rx="1.5" fill="#f07a1e"/>
+        <rect x="3" y="16" width="18" height="4" rx="1.5" fill="#7a1f0a"/>
+        <rect x="3" y="4" width="18" height="16" fill="url(#wm)" opacity=".5"/>
+      </svg>
+      <div>
+        <div class="wordmark-name">Forge</div>
+        <div class="wordmark-sub">LM workbench</div>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Views">
+      <div>
+        <div class="nav-group-label">Inference</div>
+        <a href="#generate" data-view="generate">Generate <kbd>1</kbd></a>
+        <a href="#race" data-view="race">Speculative race <kbd>2</kbd></a>
+      </div>
+      <div>
+        <div class="nav-group-label">Inside the model</div>
+        <a href="#attention" data-view="attention">Attention <kbd>3</kbd></a>
+        <a href="#embeddings" data-view="embeddings">Embeddings <kbd>4</kbd></a>
+        <a href="#tokenizer" data-view="tokenizer">Tokenizer <kbd>5</kbd></a>
+      </div>
+      <div>
+        <div class="nav-group-label">Training</div>
+        <a href="#training" data-view="training">Runs <kbd>6</kbd></a>
+      </div>
+    </nav>
+
+    <div class="rail-foot">
+      <dl class="spec" id="spec">
+        <dt>Model</dt><dd class="skeleton" style="height:12px"></dd>
+      </dl>
+    </div>
+  </aside>
+
+  <main class="main">
+    <section class="view" id="view-generate"></section>
+    <section class="view" id="view-race"></section>
+    <section class="view" id="view-attention"></section>
+    <section class="view" id="view-embeddings"></section>
+    <section class="view" id="view-tokenizer"></section>
+    <section class="view" id="view-training"></section>
+  </main>
+</div>
+<div class="tooltip" id="tooltip" role="status"></div>
+<script type="module" src="/static/js/app.js"></script>
+</body>
+</html>
