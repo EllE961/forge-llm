@@ -4,7 +4,7 @@ A frozen linear layer ``W`` (out x in) is adapted as ``W + (alpha / r) * B @ A``
 ``A`` (r x in) and ``B`` (out x r). ``B`` starts at zero, so the adapted model is
 *exactly* the base model at step 0 and training starts from the pretrained function.
 Only ``A`` and ``B`` receive gradients: for r=4 on all projections of the 30M model
-that is ~0.4% of the parameters, and the optimizer state shrinks accordingly.
+that is ~0.9% of the parameters, and the optimizer state shrinks accordingly.
 
 After training the update can be folded into ``W`` (``merge``), so inference has zero
 extra latency; ``unmerge`` restores the base weights exactly (up to fp rounding).
