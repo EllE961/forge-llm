@@ -44,9 +44,9 @@ consumer GPU, and that includes the results that didn't go the way the papers su
 | LoRA on Shakespeare (val loss, base 6.47) | r = 4: **4.26** (242K params) · r = 16: 4.06 (967K) · full FT: 3.92 best, 3.98 final (26.7M) |
 | Tests | 70 tests, CPU-only, ~30 s · `ruff` clean |
 
-> **A note on GPU numbers.** I ran everything on my desktop RTX 3080 while it was also busy with other work, so
-> absolute throughput is lower and noisier than on an idle card (training swung between 13K and 60K tokens/s). Every
-> A-vs-B comparison below was measured back-to-back under the same conditions.
+All GPU numbers come from my desktop RTX 3080 while it was also busy with other work, so absolute throughput is lower
+and noisier than on an idle card (training swung between 13K and 60K tokens/s). Every A-vs-B comparison below was
+measured back-to-back under the same conditions.
 
 ---
 
